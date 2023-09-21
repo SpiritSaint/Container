@@ -1,7 +1,7 @@
 FROM ubuntu:latest
 
 RUN apt update -qq && \
-    apt install -y -qq build-essential cmake gcc make wget zip unzip libssl-dev libcurl4-gnutls-dev  && \
+    apt install -y -qq build-essential cmake gcc make git wget zip unzip libssl-dev libcurl4-gnutls-dev  && \
     wget -q https://boostorg.jfrog.io/artifactory/main/release/1.83.0/source/boost_1_83_0.tar.gz && \
     tar -xf boost_1_83_0.tar.gz && \
     rm boost_1_83_0.tar.gz && \
